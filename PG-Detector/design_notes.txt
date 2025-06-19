@@ -2,10 +2,6 @@
 Design Notes – PyQt5-Based PostgreSQL Detection & Folder Setup Utility
 =====================================================================
 
-Author: Aditya Dhanure
-Project: Biopan Scientific Internship Assignment
-Date: June 2025
-
 --------------------------------------------------------------------------------
 1. Purpose of the Application
 --------------------------------------------------------------------------------
@@ -55,4 +51,6 @@ The tool is designed with ease of use, modularity, and clarity in mind.
 --------------------------------------------------------------------------------
 6. Conclusion
 --------------------------------------------------------------------------------
-The assignment was a great opportunity to apply my knowledge of Python, GUI programming, and database interaction in a practical, user-facing tool. It helped reinforce both my coding discipline and my confidence in delivering useful utilities under time constraints.
+The assignment was a great opportunity to apply my knowledge of Python, GUI programming,
+and database interaction in a practical, user-facing tool. It helped reinforce both my 
+coding discipline and my confidence in delivering useful utilities under time constraints.

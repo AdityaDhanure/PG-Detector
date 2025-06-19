@@ -60,9 +60,10 @@ biopan_pg_detector/
 │   ├── postgres_checker.py       # Checks if PostgreSQL is installed
 │   ├── db_connector.py           # Tries DB connection with credentials
 │   ├── folder_creator.py         # Creates the required data folders
-│   └── test_script.py            # CLI-based testing tool
-├── README.md                     # This file
-└── design_notes.txt              # To be written by the author
+|   ├── test_script.py            # CLI-based testing tool
+|   └── design_notes.txt          # 1–2 page writeup on decisions + learning
+│ 
+└── README.md                     # This file
 ```
 
 ## Testing the Utility
@@ -83,12 +84,6 @@ This script will:
 - Assumes psycopg2 works with local PostgreSQL or network-accessible DB.
 - Passwords are entered in plain input (not masked in the test script).
 - No logging or persistence implemented.
-
-## Author
-
-**Aditya Dhanure**  
-Intern, Biopan Scientific Pvt. Ltd.  
-Email: adityadhanure0607@gmail.com
 
 ## License
 
