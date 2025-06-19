@@ -60,10 +60,9 @@ biopan_pg_detector/
 │   ├── postgres_checker.py       # Checks if PostgreSQL is installed
 │   ├── db_connector.py           # Tries DB connection with credentials
 │   ├── folder_creator.py         # Creates the required data folders
-|   ├── test_script.py            # CLI-based testing tool
-|   └── design_notes.txt          # 1–2 page writeup on decisions + learning
-│ 
-└── README.md                     # This file
+│   └── test_script.py            # CLI-based testing tool
+├── README.md                     # This file
+└── design_notes.txt              # To be written by the author
 ```
 
 ## Testing the Utility
