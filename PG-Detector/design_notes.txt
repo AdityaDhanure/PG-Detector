@@ -1,0 +1,58 @@
+
+Design Notes – PyQt5-Based PostgreSQL Detection & Folder Setup Utility
+=====================================================================
+
+Author: Aditya Dhanure
+Project: Biopan Scientific Internship Assignment
+Date: June 2025
+
+--------------------------------------------------------------------------------
+1. Purpose of the Application
+--------------------------------------------------------------------------------
+The goal of this utility is to provide a simple desktop application that allows non-technical users to:
+- Detect whether PostgreSQL is installed on their system.
+- Enter and validate PostgreSQL database connection information.
+- Automatically create folders for organizing different types of data files.
+
+The tool is designed with ease of use, modularity, and clarity in mind.
+
+--------------------------------------------------------------------------------
+2. Design Decisions
+--------------------------------------------------------------------------------
+- **Modular Codebase**: Divided the code into logical folders (`ui/`, `utils/`) to separate GUI logic and backend functions.
+- **PyQt5 Framework**: Chosen for creating a native desktop GUI experience on Windows with minimal effort.
+- **PostgreSQL Detection**: Implemented using `shutil.which()` and hardcoded common install paths to locate `psql.exe`.
+- **Database Validation**: Used `psycopg2` for a lightweight connection check without executing SQL queries.
+- **Folder Creation**: Used `os.makedirs()` with error handling to ensure directories are created reliably.
+- **Bonus Features**: Implemented user-driven folder path selection via `QFileDialog` and a visual summary screen.
+
+--------------------------------------------------------------------------------
+3. Challenges Faced
+--------------------------------------------------------------------------------
+- Managing the PyQt5 event loop inside a test script without freezing or hanging the process.
+- Ensuring `QApplication` was always initialized before using any GUI component.
+- Handling user cancellation and preventing crashes when dialogs were closed unexpectedly.
+- Organizing folder creation results in a format that was readable and could be easily displayed on the summary screen.
+
+--------------------------------------------------------------------------------
+4. What I Learned
+--------------------------------------------------------------------------------
+- How to structure a real-world PyQt5 application using modular design.
+- Practical handling of user inputs and system checks in a desktop environment.
+- Error handling for GUI and file system operations.
+- Basics of PostgreSQL connectivity through Python (`psycopg2`).
+- Enhanced understanding of user experience design and testing workflows.
+
+--------------------------------------------------------------------------------
+5. Possible Improvements (Future Scope)
+--------------------------------------------------------------------------------
+- Add logging functionality to capture errors and actions in a log file.
+- Mask the password input field in the test script.
+- Add multi-language or theme support to improve UI accessibility.
+- Package the utility into a standalone `.exe` using PyInstaller.
+- Store and reuse database configurations via a `.env` or config file.
+
+--------------------------------------------------------------------------------
+6. Conclusion
+--------------------------------------------------------------------------------
+The assignment was a great opportunity to apply my knowledge of Python, GUI programming, and database interaction in a practical, user-facing tool. It helped reinforce both my coding discipline and my confidence in delivering useful utilities under time constraints.
